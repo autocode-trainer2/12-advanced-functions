@@ -2,7 +2,7 @@ const {cache, forwardBackwardSteps, applyAll, sum, mul} = require('../src/advanc
 require('mocha-sinon');
 const sinon = require('sinon');
 
-
+//Student test repository
 
 describe('cache function', () => {
     it('should call complex function', () => {
@@ -103,18 +103,5 @@ describe('applyAll function testing', () => {
         expect(applyAll(mul, 21, 2, 5))
             .to.eql(210);
     });
-    it('Should return correct mul according to given arguments in function', () => {
-        expect(applyAll(mul, 6, 6))
-            .to.eql(36);
-    });
-    it('Should return correct mul according to given arguments in function', () => {
-        expect(applyAll(mul, 5, 2, 12, 1, 6, 32, 31, 88, 121, 4, 2))
-            .to.eql(60841820160);
-    });
-    it('Should return correct mul according to given arguments in function', () => {
-        expect(applyAll(mul, 3, 2, 1, 0))
-            .to.eql(0);
-    });
-
 });
 
