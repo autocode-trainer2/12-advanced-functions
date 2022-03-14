@@ -99,9 +99,6 @@ describe('applyAll function testing', () => {
         expect(applyAll(sum, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1))
             .to.eql(17);
     });
-    it('Should return correct mul according to given arguments in function', () => {
-        expect(applyAll(mul, 21, 2, 5))
-            .to.eql(210);
-    });
+
 });
 
